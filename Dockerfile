@@ -4,10 +4,7 @@ RUN wget "https://dl.google.com/cloudsql/cloud_sql_proxy.linux.amd64" -O /usr/lo
     chmod +x /usr/local/bin/cloud_sql_proxy
 
 WORKDIR /var/www/html
-<<<<<<< HEAD
 
-=======
->>>>>>> 2aef9ee7aa385816a17a67937066d379d7732616
 COPY --chown=www-data:www-data . .
 
 RUN npm ci && \

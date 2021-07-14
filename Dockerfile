@@ -5,9 +5,6 @@ RUN wget "https://storage.googleapis.com/cloudsql-proxy/v1.21.0/cloud_sql_proxy.
 
 WORKDIR /var/www/html
 
-COPY --chown=www-data:www-data composer.* ./
-RUN composer install --no-autoloader --no-dev --no-scripts
-
 COPY --chown=www-data:www-data . .
 
 RUN npm ci && \

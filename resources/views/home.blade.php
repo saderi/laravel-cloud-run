@@ -4,6 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
+            <h1>Test Cloud run</h1>
             <div class="card">
                 <div class="card-header">{{ __('Dashboard') }}</div>
 
